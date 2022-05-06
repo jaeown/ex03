@@ -9,7 +9,7 @@
 <body>
 <div class="row">
 	<div class="col-lg-12">
-    	<h1 class="page-header">Tables</h1>
+    	<h1 class="page-header">Notice Board</h1>
     </div>
     <!-- /.col-lg-12 -->
 </div>
@@ -54,7 +54,7 @@
 			 		<form id="searchForm" action="/board/list" method="get">
 			 			<select name="type">
 			 				<option value=""
-			 					<c:out value="${pageMaker.cri.type == null?'selected':''}"/>>--
+			 					<c:out value="${pageMaker.cri.type == null?'selected':''}"/>>선택
 			 				</option>
 			 				<option value="T"
 			 					<c:out value="${pageMaker.cri.type eq 'T'?'selected':''}"/>>제목
@@ -126,7 +126,7 @@
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				<h4 class="modal-title" id="myModalLabel">Modal Title</h4>
 			</div>
-			<div class="modal-body">처리가 완료 되었습니다.</div>
+			<div class="modal-body">등록 되었습니다.</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			</div>
@@ -181,7 +181,6 @@
 			actionForm.submit();
 		});
 		
-		
 		var searchForm = $("#searchForm");
 		
 		$("#searchForm button").on("click", function(e){
@@ -202,7 +201,6 @@
 			
 		});
 	});
-	
 
 </script>
 </head>

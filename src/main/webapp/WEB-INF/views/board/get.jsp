@@ -63,8 +63,35 @@
 <!-- /.row -->
 </body>
 <head>
-<script type="text/javascript" src="/resources/js/reply.js"> </script>
+<script type="text/javascript" src="/resources/js/reply.js">
+console.log("==============================================");
+console.log("JS TEST");
+
+var bnoValue = '<c:out value="${board.bno}"/>';
+
+//for replyService add test
+replyService.getList({bno:bnoValue, page:1}, function(list){
+	
+	for(var i=0, len=list.length || 0; i<len; i++){
+		console.log(list[i]);
+	}
+
+});
+
+// add(
+// 		{reply:"JS Test", replyer:"tester", bno:bnoValue}
+// 		,
+// 		function(result){
+// 			alert("RESULT: "+ result);
+// 		}
+// );
+
+</script>
 <script type="text/javascript">
+
+
+
+
 $(document).ready(function(){
 	
 	console.log(replyService);

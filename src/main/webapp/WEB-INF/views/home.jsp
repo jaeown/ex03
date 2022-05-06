@@ -5,6 +5,10 @@
 <html>
 <head>
 	<title>Home</title>
+	
+<script type="text/javascript">
+	window.setTimeout('window.location.reload()',60000);
+</script>	
 </head>
 <body>
 <h1>
@@ -14,5 +18,7 @@
 <P>  The time on the server is ${serverTime}. </P>
 
 <button data-oper='list' class="btn btn-default" onclick="location.href='/board/list'">게시판 바로가기</button>
+
+
 </body>
 </html>
