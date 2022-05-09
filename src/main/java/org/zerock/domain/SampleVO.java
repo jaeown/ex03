@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SampleVO {
 
-	private Integer mno;
-	private String firstName;
-	private String listName;
+  private Integer mno;
+  private String firstName;
+  private String lastName;
+
 }
